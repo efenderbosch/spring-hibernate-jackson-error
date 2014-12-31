@@ -1,0 +1,1 @@
+Run, you will see that test.id does not get serialized to JSON. Comment out @Entity on Test and re-run. Id will get serialized.
