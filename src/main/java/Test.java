@@ -1,7 +1,6 @@
 import java.io.Serializable;
 import java.util.Objects;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -29,7 +28,6 @@ public class Test implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(insertable = false, updatable = false)
 	@JsonSerialize(using = ToStringSerializer.class)
 	private Long id;
 	private String attribute;
